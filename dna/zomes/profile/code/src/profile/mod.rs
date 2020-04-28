@@ -1,4 +1,3 @@
-
 #![allow(dead_code)]
 #![allow(unused_imports)]
 
@@ -69,7 +68,6 @@ pub struct PrivateProfileEntry {
 #[derive(Serialize, Deserialize, Debug, DefaultJson, Clone)]
 #[serde(rename_all = "snake_case")]
 pub struct PublicProfileEntry {
-    agent_id: Address,
     username: String,
 }
 // Hashed Email
@@ -281,19 +279,3 @@ pub fn hashed_email_definition() -> ValidatingEntryType {
         ]
     )
 }
-
-
-// HELPER FUNCTION
-// Timestamp: populates timestamp values in structs when in use
-// fn timestamp(address: Address) -> ZomeApiResult<Iso8601> {
-//     let options = GetEntryOptions{status_request: StatusRequestKind::Initial, entry: false, headers: true, timeout: Timeout::new(10000)};
-//     let entry_result = hdk::get_entry_result(&address, options)?;
-//     match entry_result.result {
-//         GetEntryResultType::Single(entry) => {
-//             Ok(entry.headers[0].timestamp().clone())
-//         },
-//         _ => {
-//             unreachable!()
-//         }
-//     }
-// }
