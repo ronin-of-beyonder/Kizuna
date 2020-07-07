@@ -1,0 +1,8 @@
+dist/
+node_modules/
+target/
+.hc
+.cargo
+dna/
+storage/
+.DS_Store

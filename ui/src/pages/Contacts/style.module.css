@@ -1,0 +1,30 @@
+/* .homeContent {
+  background: var(--ion-background-color) !important;
+} */
+
+/* .searchBar .searchbar-input-container .searchbar-search-icon {
+  display: none !important;
+  width: 0;
+  height: 0;
+} */
+
+.fab {
+  /* margin-bottom: 75px; */
+}
+
+.center {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  padding-bottom: 20vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-sad {
+  font-size: 4rem;
+}
